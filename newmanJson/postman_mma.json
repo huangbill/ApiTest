@@ -1,0 +1,1582 @@
+{
+	"variables": [],
+	"info": {
+		"name": "健康猫",
+		"_postman_id": "f1cb42ef-c99e-8dfc-6a89-65745ed1da4d",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "MMA",
+			"description": "",
+			"item": [
+				{
+					"name": "Club : 俱乐部",
+					"description": "",
+					"item": [
+						{
+							"name": "俱乐部",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"type": "text/javascript",
+										"exec": [
+											"tests[\"返回结果是否正确\"] = responseBody.has(\"true\");",
+											"",
+											"tests[\"Status code is 200\"] = responseCode.code === 200;",
+											"",
+											"",
+											"var jsonData = JSON.parse(responseBody);",
+											"tests[\"Your test id\"] = jsonData.last === true;"
+										]
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"type": "text/javascript",
+										"exec": [
+											"//postman.setEnvironmentVariable(\"variable_key\", \"variable_value\");"
+										]
+									}
+								}
+							],
+							"request": {
+								"url": {
+									"raw": "http://{{MMA_test}}/mma/clubTop?start=0&limit=20",
+									"protocol": "http",
+									"host": [
+										"{{MMA_test}}"
+									],
+									"path": [
+										"mma",
+										"clubTop"
+									],
+									"query": [
+										{
+											"key": "start",
+											"value": "0",
+											"equals": true,
+											"description": ""
+										},
+										{
+											"key": "limit",
+											"value": "20",
+											"equals": true,
+											"description": ""
+										}
+									],
+									"variable": []
+								},
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "俱乐部信息",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"type": "text/javascript",
+										"exec": [
+											"//之前是500错误",
+											"tests[\"Status code is 200\"] = responseCode.code === 200;",
+											"",
+											"//之前是500错误",
+											"var jsonData = JSON.parse(responseBody);",
+											"tests[\"Your test id\"] = jsonData.id === 10;",
+											"",
+											"var jsonData = JSON.parse(responseBody);",
+											"tests[\"Your test abbreviationName\"] = jsonData.abbreviationName === \"黑龙江省龙云格斗\";"
+										]
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"type": "text/javascript",
+										"exec": [
+											"//postman.setEnvironmentVariable(\"variable_key\", \"variable_value\");"
+										]
+									}
+								}
+							],
+							"request": {
+								"url": {
+									"raw": "http://{{MMA_test}}/mma/clubMessage?id=10",
+									"protocol": "http",
+									"host": [
+										"{{MMA_test}}"
+									],
+									"path": [
+										"mma",
+										"clubMessage"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "10",
+											"equals": true,
+											"description": ""
+										}
+									],
+									"variable": []
+								},
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "俱乐部排名TOP",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"type": "text/javascript",
+										"exec": [
+											"tests[\"返回结果包含\"] = responseBody.has(\"data\");",
+											"",
+											"tests[\"Status code is 200\"] = responseCode.code === 200;"
+										]
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"type": "text/javascript",
+										"exec": [
+											"//postman.setEnvironmentVariable(\"variable_key\", \"variable_value\");"
+										]
+									}
+								}
+							],
+							"request": {
+								"url": {
+									"raw": "http://{{MMA_test}}/mma/clubTop?start=0&limit=5",
+									"protocol": "http",
+									"host": [
+										"{{MMA_test}}"
+									],
+									"path": [
+										"mma",
+										"clubTop"
+									],
+									"query": [
+										{
+											"key": "start",
+											"value": "0",
+											"equals": true,
+											"description": ""
+										},
+										{
+											"key": "limit",
+											"value": "5",
+											"equals": true,
+											"description": ""
+										}
+									],
+									"variable": []
+								},
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "俱乐部排名-更多详情页面",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"type": "text/javascript",
+										"exec": [
+											"tests[\"俱乐部详情返回last\"] = responseBody.has(\"true\");",
+											"",
+											"tests[\"Body matches string\"] = responseBody.has(\"大连北方\");"
+										]
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"type": "text/javascript",
+										"exec": [
+											"//postman.setEnvironmentVariable(\"variable_key\", \"variable_value\");"
+										]
+									}
+								}
+							],
+							"request": {
+								"url": {
+									"raw": "http://{{MMA_test}}/mma/clubRank?start=0&limit=100",
+									"protocol": "http",
+									"host": [
+										"{{MMA_test}}"
+									],
+									"path": [
+										"mma",
+										"clubRank"
+									],
+									"query": [
+										{
+											"key": "start",
+											"value": "0",
+											"equals": true,
+											"description": ""
+										},
+										{
+											"key": "limit",
+											"value": "100",
+											"equals": true,
+											"description": ""
+										}
+									],
+									"variable": []
+								},
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"description": ""
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "index : 主页",
+					"description": "",
+					"item": [
+						{
+							"name": "主页-轮播图",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"type": "text/javascript",
+										"exec": [
+											"tests[\"title\"] = responseBody.has(\"精武门对决-乌力吉布仁vs胡布兰\");"
+										]
+									}
+								}
+							],
+							"request": {
+								"url": "http://{{MMA_test}}/mma/rotation",
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"description": "http://dev.daxgame.com:8095/home/carouselFigure?page=1&pageSize=10"
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "match : 赛事",
+					"description": "",
+					"item": [
+						{
+							"name": "赛事-赛事详情",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"type": "text/javascript",
+										"exec": [
+											"tests[\"title\"] = responseBody.has(\"益扎\");"
+										]
+									}
+								}
+							],
+							"request": {
+								"url": {
+									"raw": "http://{{MMA_test}}/mma/MatchMessage?id=2",
+									"protocol": "http",
+									"host": [
+										"{{MMA_test}}"
+									],
+									"path": [
+										"mma",
+										"MatchMessage"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "2",
+											"equals": true,
+											"description": ""
+										}
+									],
+									"variable": []
+								},
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"description": "http://dev.daxgame.com:8095/home/carouselFigure?page=1&pageSize=10"
+							},
+							"response": []
+						},
+						{
+							"name": "赛事-根据团战或赛站获取比赛",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"type": "text/javascript",
+										"exec": [
+											"tests[\"title\"] = responseBody.has(\"苏木达尔基\");"
+										]
+									}
+								}
+							],
+							"request": {
+								"url": {
+									"raw": "http://{{MMA_test}}/mma/getMatch?siteId=10&id=",
+									"protocol": "http",
+									"host": [
+										"{{MMA_test}}"
+									],
+									"path": [
+										"mma",
+										"getMatch"
+									],
+									"query": [
+										{
+											"key": "siteId",
+											"value": "10",
+											"equals": true,
+											"description": ""
+										},
+										{
+											"key": "id",
+											"value": "",
+											"equals": true,
+											"description": ""
+										}
+									],
+									"variable": []
+								},
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"description": "http://dev.daxgame.com:8095/home/carouselFigure?page=1&pageSize=10"
+							},
+							"response": []
+						},
+						{
+							"name": "赛事-根据团战获取比赛",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"type": "text/javascript",
+										"exec": [
+											"tests[\"title\"] = responseBody.has(\"四川恩波格斗兰\");",
+											"",
+											"",
+											"// var jsonData = JSON.parse(responseBody);",
+											"// tests[\"Your test name\"] = jsonData.name === \"益扎\";",
+											"",
+											"// var responseJson;  ",
+											"// try{  ",
+											"//     tests[\" body has Count\"] = responseBody.has(\"count\");  ",
+											"//     tests[\" body has Docs\"] = responseBody.has(\"metadatas\");  ",
+											"//     responseJson = JSON.parse(responseBody);  ",
+											"//     tests[\" doc0 contains iiid\"] = \"iiid\" in  responseJson.Data.metadatas[0];  ",
+											"// }  ",
+											"// catch(e){  ",
+											"// }  ",
+											"  ",
+											"// tests[\"status code is 200\"]= responseCode.code===200;  ",
+											"  ",
+											"// tests[\"Status code name has string\"] = responseCode.name.has(\"Created\");  ",
+											"  ",
+											"// tests[\"Content-Type is present\"] = postman.getResponseHeader(\"Content-Type\");  ",
+											"  ",
+											"// tests[\"Body matches string\"] = responseBody.has(\"string_you_want_to_search\");  "
+										]
+									}
+								}
+							],
+							"request": {
+								"url": {
+									"raw": "http://{{MMA_test}}/mma/getMatch?siteId=8&id=",
+									"protocol": "http",
+									"host": [
+										"{{MMA_test}}"
+									],
+									"path": [
+										"mma",
+										"getMatch"
+									],
+									"query": [
+										{
+											"key": "siteId",
+											"value": "8",
+											"equals": true,
+											"description": ""
+										},
+										{
+											"key": "id",
+											"value": "",
+											"equals": true,
+											"description": "暂时没有团战数据"
+										}
+									],
+									"variable": []
+								},
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"description": "http://dev.daxgame.com:8095/home/carouselFigure?page=1&pageSize=10"
+							},
+							"response": []
+						},
+						{
+							"name": "赛事-根据赛站获取俱乐部信息",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"type": "text/javascript",
+										"exec": [
+											"",
+											"var responseJson;  ",
+											"try{  ",
+											"    tests[\" body has fullName\"] = responseBody.has(\"上海盛世英豪职业MMA搏击俱乐部\");  ",
+											"    tests[\" body has abbreviationName\"] = responseBody.has(\"北京自由人\");  ",
+											"    ",
+											"    responseJson = JSON.parse(responseBody);  ",
+											"    tests[\" doc0 contains iiid\"] = \"iiid\" in  responseJson.Data.metadatas[0];  ",
+											"}  ",
+											"catch(e){  ",
+											"}  ",
+											"  ",
+											"tests[\"status code is 200\"]= responseCode.code===200;  ",
+											"  ",
+											"// tests[\"Status code name has string\"] = responseCode.name.has(\"山西鑫度\");  ",
+											"  ",
+											"tests[\"Content-Type is present\"] = postman.getResponseHeader(\"Content-Type\");  ",
+											"  ",
+											"tests[\"Body matches string\"] = responseBody.has(\"北京自由人\");  "
+										]
+									}
+								}
+							],
+							"request": {
+								"url": {
+									"raw": "http://{{MMA_test}}/mma/getMatchClub?ids=1%2C2",
+									"protocol": "http",
+									"host": [
+										"{{MMA_test}}"
+									],
+									"path": [
+										"mma",
+										"getMatchClub"
+									],
+									"query": [
+										{
+											"key": "ids",
+											"value": "1%2C2",
+											"equals": true,
+											"description": ""
+										}
+									],
+									"variable": []
+								},
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"description": "http://dev.daxgame.com:8095/home/carouselFigure?page=1&pageSize=10"
+							},
+							"response": []
+						},
+						{
+							"name": "赛事-据俱乐部id数组获取热门选手信息",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"type": "text/javascript",
+										"exec": [
+											"",
+											"var responseJson;  ",
+											"try{  ",
+											"    tests[\" body has fullName\"] = responseBody.has(\"沙依兰\");  ",
+											"    tests[\" body has abbreviationName\"] = responseBody.has(\"中国\");  ",
+											"    ",
+											"    responseJson = JSON.parse(responseBody);  ",
+											"    tests[\" doc0 contains iiid\"] = \"iiid\" in  responseJson.Data.metadatas[0];  ",
+											"}  ",
+											"catch(e){  ",
+											"}  ",
+											"  ",
+											"tests[\"status code is 200\"]= responseCode.code===200;  ",
+											"  ",
+											"// tests[\"Status code name has string\"] = responseCode.name.has(\"山西鑫度\");  ",
+											"  ",
+											"tests[\"Content-Type is present\"] = postman.getResponseHeader(\"Content-Type\");  ",
+											"  ",
+											"tests[\"Body matches string\"] = responseBody.has(\"乌兰\");  "
+										]
+									}
+								}
+							],
+							"request": {
+								"url": {
+									"raw": "http://{{MMA_test}}/mma/getMatchHotPlayer?ids=17&ids=16&ids=20&ids=22&ids=18&ids=18&ids=22&ids=18&ids=15&ids=11&ids=16&ids=19&ids=12&ids=9&ids=22&ids=16",
+									"protocol": "http",
+									"host": [
+										"{{MMA_test}}"
+									],
+									"path": [
+										"mma",
+										"getMatchHotPlayer"
+									],
+									"query": [
+										{
+											"key": "ids",
+											"value": "17",
+											"equals": true,
+											"description": ""
+										},
+										{
+											"key": "ids",
+											"value": "16",
+											"equals": true,
+											"description": ""
+										},
+										{
+											"key": "ids",
+											"value": "20",
+											"equals": true,
+											"description": ""
+										},
+										{
+											"key": "ids",
+											"value": "22",
+											"equals": true,
+											"description": ""
+										},
+										{
+											"key": "ids",
+											"value": "18",
+											"equals": true,
+											"description": ""
+										},
+										{
+											"key": "ids",
+											"value": "18",
+											"equals": true,
+											"description": ""
+										},
+										{
+											"key": "ids",
+											"value": "22",
+											"equals": true,
+											"description": ""
+										},
+										{
+											"key": "ids",
+											"value": "18",
+											"equals": true,
+											"description": ""
+										},
+										{
+											"key": "ids",
+											"value": "15",
+											"equals": true,
+											"description": ""
+										},
+										{
+											"key": "ids",
+											"value": "11",
+											"equals": true,
+											"description": ""
+										},
+										{
+											"key": "ids",
+											"value": "16",
+											"equals": true,
+											"description": ""
+										},
+										{
+											"key": "ids",
+											"value": "19",
+											"equals": true,
+											"description": ""
+										},
+										{
+											"key": "ids",
+											"value": "12",
+											"equals": true,
+											"description": ""
+										},
+										{
+											"key": "ids",
+											"value": "9",
+											"equals": true,
+											"description": ""
+										},
+										{
+											"key": "ids",
+											"value": "22",
+											"equals": true,
+											"description": ""
+										},
+										{
+											"key": "ids",
+											"value": "16",
+											"equals": true,
+											"description": ""
+										}
+									],
+									"variable": []
+								},
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"description": "http://dev.daxgame.com:8095/home/carouselFigure?page=1&pageSize=10"
+							},
+							"response": []
+						},
+						{
+							"name": "赛事-获取所有赛季",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"type": "text/javascript",
+										"exec": [
+											"",
+											"var responseJson;  ",
+											"try{  ",
+											"    tests[\" body has fullName\"] = responseBody.has(\"49\");  ",
+											"    tests[\" body has abbreviationName\"] = responseBody.has(\"2016-2017赛季\");  ",
+											"    ",
+											"    responseJson = JSON.parse(responseBody);  ",
+											"    tests[\" doc0 contains iiid\"] = \"iiid\" in  responseJson.Data.metadatas[0];  ",
+											"}  ",
+											"catch(e){  ",
+											"}  ",
+											"  ",
+											"tests[\"status code is 200\"]= responseCode.code===200;  ",
+											"  ",
+											"// tests[\"Status code name has string\"] = responseCode.name.has(\"山西鑫度\");  ",
+											"  ",
+											"tests[\"Content-Type is present\"] = postman.getResponseHeader(\"Content-Type\");  ",
+											"  ",
+											"tests[\"Body matches string\"] = responseBody.has(\"50\");  "
+										]
+									}
+								}
+							],
+							"request": {
+								"url": "http://{{MMA_test}}/mma/getMatchSeason ",
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"description": "http://dev.daxgame.com:8095/home/carouselFigure?page=1&pageSize=10"
+							},
+							"response": []
+						},
+						{
+							"name": "赛事-根据赛季获取赛站信息",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"type": "text/javascript",
+										"exec": [
+											"tests[\"title\"] = responseBody.has(\"第十站\");"
+										]
+									}
+								}
+							],
+							"request": {
+								"url": {
+									"raw": "http://{{MMA_test}}/mma/getMatchSite?ids=49",
+									"protocol": "http",
+									"host": [
+										"{{MMA_test}}"
+									],
+									"path": [
+										"mma",
+										"getMatchSite"
+									],
+									"query": [
+										{
+											"key": "ids",
+											"value": "49",
+											"equals": true,
+											"description": ""
+										}
+									],
+									"variable": []
+								},
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"description": "http://dev.daxgame.com:8095/home/carouselFigure?page=1&pageSize=10"
+							},
+							"response": []
+						},
+						{
+							"name": "赛事-首页最新赛事",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"type": "text/javascript",
+										"exec": [
+											"// 暂时屏蔽最新赛事接口",
+											"tests[\"title\"] = responseBody.has(\"精武门对决-乌力吉布仁vs胡布兰\");"
+										]
+									}
+								}
+							],
+							"request": {
+								"url": {
+									"raw": "http://{{MMA_test}}/mma/newestMatch",
+									"protocol": "http",
+									"host": [
+										"{{MMA_test}}"
+									],
+									"path": [
+										"mma",
+										"newestMatch"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"variable": []
+								},
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"description": "http://dev.daxgame.com:8095/home/carouselFigure?page=1&pageSize=10"
+							},
+							"response": []
+						},
+						{
+							"name": "赛事-当前赛季赛站信息",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"type": "text/javascript",
+										"exec": [
+											"tests[\"title\"] = responseBody.has(\"第十一站\");"
+										]
+									}
+								}
+							],
+							"request": {
+								"url": "http://{{MMA_test}}/mma/nowSeason",
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"description": "http://dev.daxgame.com:8095/home/carouselFigure?page=1&pageSize=10"
+							},
+							"response": []
+						},
+						{
+							"name": "赛事-根据搜索获取比赛",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"type": "text/javascript",
+										"exec": [
+											"tests[\"title\"] = responseBody.has(\"高博\");"
+										]
+									}
+								}
+							],
+							"request": {
+								"url": {
+									"raw": "http://{{MMA_test}}/mma/searchMatch?season=49&site=11&club=10&player=26&start=0&limit=10",
+									"protocol": "http",
+									"host": [
+										"{{MMA_test}}"
+									],
+									"path": [
+										"mma",
+										"searchMatch"
+									],
+									"query": [
+										{
+											"key": "season",
+											"value": "49",
+											"equals": true,
+											"description": ""
+										},
+										{
+											"key": "site",
+											"value": "11",
+											"equals": true,
+											"description": ""
+										},
+										{
+											"key": "club",
+											"value": "10",
+											"equals": true,
+											"description": ""
+										},
+										{
+											"key": "player",
+											"value": "26",
+											"equals": true,
+											"description": ""
+										},
+										{
+											"key": "start",
+											"value": "0",
+											"equals": true,
+											"description": ""
+										},
+										{
+											"key": "limit",
+											"value": "10",
+											"equals": true,
+											"description": ""
+										}
+									],
+									"variable": []
+								},
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"description": "http://dev.daxgame.com:8095/home/carouselFigure?page=1&pageSize=10"
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "common : 公共",
+					"description": "",
+					"item": [
+						{
+							"name": "公共-当前赛站",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"type": "text/javascript",
+										"exec": [
+											"var jsonData = JSON.parse(responseBody);",
+											"tests[\"Your test name\"] = jsonData.name === \"第十一站\";",
+											"",
+											"var jsonData = JSON.parse(responseBody);",
+											"tests[\"Your test startTime\"] = jsonData.startTime === 1505559600000;",
+											"",
+											"var jsonData = JSON.parse(responseBody);",
+											"tests[\"Your test address\"] = jsonData.address === \"广州天河体育中心体育馆\";"
+										]
+									}
+								}
+							],
+							"request": {
+								"url": "http://{{MMA_test}}/mma/currentSite",
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"description": "http://dev.daxgame.com:8095/home/carouselFigure?page=1&pageSize=10"
+							},
+							"response": []
+						},
+						{
+							"name": "公共-首页轮播广告位 ID=1",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"type": "text/javascript",
+										"exec": [
+											"tests[\"Body matches string\"] = responseBody.has(\"首页轮播广告位\");"
+										]
+									}
+								}
+							],
+							"request": {
+								"url": {
+									"raw": "http://{{MMA_test}}/mma/adsense?ids=1",
+									"protocol": "http",
+									"host": [
+										"{{MMA_test}}"
+									],
+									"path": [
+										"mma",
+										"adsense"
+									],
+									"query": [
+										{
+											"key": "ids",
+											"value": "1",
+											"equals": true,
+											"description": ""
+										}
+									],
+									"variable": []
+								},
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"description": "http://dev.daxgame.com:8095/home/carouselFigure?page=1&pageSize=10"
+							},
+							"response": []
+						},
+						{
+							"name": "公共-首页侧边上广告位 ID=2",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"type": "text/javascript",
+										"exec": [
+											"tests[\"Body matches string\"] = responseBody.has(\"首页侧边上广告位\");"
+										]
+									}
+								}
+							],
+							"request": {
+								"url": {
+									"raw": "http://{{MMA_test}}/mma/adsense?ids=2",
+									"protocol": "http",
+									"host": [
+										"{{MMA_test}}"
+									],
+									"path": [
+										"mma",
+										"adsense"
+									],
+									"query": [
+										{
+											"key": "ids",
+											"value": "2",
+											"equals": true,
+											"description": ""
+										}
+									],
+									"variable": []
+								},
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"description": "http://dev.daxgame.com:8095/home/carouselFigure?page=1&pageSize=10"
+							},
+							"response": []
+						},
+						{
+							"name": "公共-其他广告位 ID=1,2,3,4,5,6,7,8",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"type": "text/javascript",
+										"exec": [
+											"tests[\"Body matches string\"] = responseBody.has(\"首页轮播广告位\");"
+										]
+									}
+								}
+							],
+							"request": {
+								"url": {
+									"raw": "http://{{MMA_test}}/mma/adsense?ids=1,2,3,4,5,6,7,8",
+									"protocol": "http",
+									"host": [
+										"{{MMA_test}}"
+									],
+									"path": [
+										"mma",
+										"adsense"
+									],
+									"query": [
+										{
+											"key": "ids",
+											"value": "1,2,3,4,5,6,7,8",
+											"equals": true,
+											"description": ""
+										}
+									],
+									"variable": []
+								},
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"description": "http://dev.daxgame.com:8095/home/carouselFigure?page=1&pageSize=10"
+							},
+							"response": []
+						},
+						{
+							"name": "公共-动态top栏",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"type": "text/javascript",
+										"exec": [
+											"tests[\"Body matches string\"] = responseBody.has(\"精武故事\");",
+											"",
+											"//var jsonData = JSON.parse(responseBody);",
+											"//tests[\"Your test name\"] = jsonData.name === \"个人专访\";"
+										]
+									}
+								}
+							],
+							"request": {
+								"url": {
+									"raw": "http://{{MMA_test}}/mma/dynamicTop?type=0",
+									"protocol": "http",
+									"host": [
+										"{{MMA_test}}"
+									],
+									"path": [
+										"mma",
+										"dynamicTop"
+									],
+									"query": [
+										{
+											"key": "type",
+											"value": "0",
+											"equals": true,
+											"description": ""
+										}
+									],
+									"variable": []
+								},
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"description": "http://dev.daxgame.com:8095/home/carouselFigure?page=1&pageSize=10"
+							},
+							"response": []
+						},
+						{
+							"name": "公共-最新资讯，动态",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"type": "text/javascript",
+										"exec": [
+											"tests[\"Body matches string\"] = responseBody.has(\"测试组图1\");"
+										]
+									}
+								}
+							],
+							"request": {
+								"url": "http://{{MMA_test}}/mma/newInfo",
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"description": "http://dev.daxgame.com:8095/home/carouselFigure?page=1&pageSize=10"
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Player : 选手",
+					"description": "\r\nParameter\tValue\tDescription\tParameter\tType\tData Type\r\nstart\t\t0   \t分页开始位置，0开始\t\tquery\tinteger\r\nlimit\t\t5   \t分页获取数量       \t\tquery\tinteger",
+					"item": [
+						{
+							"name": "选手-获取所有国籍信息",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"type": "text/javascript",
+										"exec": [
+											"tests[\"包含国籍\"] = responseBody.has(\"赞比亚\");",
+											"",
+											"// var jsonData = JSON.parse(responseBody);",
+											"// tests[\"Your test name\"] = jsonData.value === 100;",
+											"// tests[\"包含国籍id\"] = jsonData[\"id\"] == \"244\";",
+											"// tests[\"包含国籍id\"] = jsonData[\"last\"] == \"false\";",
+											"// tests[\"json格式验证\"] = tv4.validate(\"id\", 1111); //验证json格式",
+											"tests[\"json格式验证\"] = tv4.validate(\"name\", \"赞比亚\"); //验证json格式"
+										]
+									}
+								}
+							],
+							"request": {
+								"url": {
+									"raw": "http://{{MMA_test}}/mma/countryList?start=0&limit=5",
+									"protocol": "http",
+									"host": [
+										"{{MMA_test}}"
+									],
+									"path": [
+										"mma",
+										"countryList"
+									],
+									"query": [
+										{
+											"key": "start",
+											"value": "0",
+											"equals": true,
+											"description": "分页开始位置，0开始"
+										},
+										{
+											"key": "limit",
+											"value": "5",
+											"equals": true,
+											"description": "分页获取数量"
+										}
+									],
+									"variable": []
+								},
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"description": "http://dev.daxgame.com:8095/home/carouselFigure?page=1&pageSize=10"
+							},
+							"response": []
+						},
+						{
+							"name": "选手-选手search",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"type": "text/javascript",
+										"exec": [
+											"tests[\"包含国籍\"] = responseBody.has(\"波帕姆泰拳商丘会馆俱乐部\");"
+										]
+									}
+								}
+							],
+							"request": {
+								"url": {
+									"raw": "http://{{MMA_test}}/mma/palyerSearch ?countryId=1,32&level=04,05&clubId=18&search=&start=0&limit=10",
+									"protocol": "http",
+									"host": [
+										"{{MMA_test}}"
+									],
+									"path": [
+										"mma",
+										"palyerSearch "
+									],
+									"query": [
+										{
+											"key": "countryId",
+											"value": "1,32",
+											"equals": true,
+											"description": "国籍id数组，多个id以,分割"
+										},
+										{
+											"key": "level",
+											"value": "04,05",
+											"equals": true,
+											"description": "选手级别id数组，多个id以,分割"
+										},
+										{
+											"key": "clubId",
+											"value": "18",
+											"equals": true,
+											"description": "俱乐部id"
+										},
+										{
+											"key": "search",
+											"value": "",
+											"equals": true,
+											"description": ""
+										},
+										{
+											"key": "start",
+											"value": "0",
+											"equals": true,
+											"description": "第几页,从0开始"
+										},
+										{
+											"key": "limit",
+											"value": "10",
+											"equals": true,
+											"description": "每页的数量"
+										}
+									],
+									"variable": []
+								},
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"description": "http://dev.daxgame.com:8095/home/carouselFigure?page=1&pageSize=10"
+							},
+							"response": []
+						},
+						{
+							"name": "选手-选手search copy",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"type": "text/javascript",
+										"exec": [
+											"tests[\"包含\"] = responseBody.has(\"波帕姆泰拳商丘会馆俱乐部\");"
+										]
+									}
+								}
+							],
+							"request": {
+								"url": {
+									"raw": "http://121.201.58.176:8010/mma/palyerSearch?countryId=1%2C32&level=04%2C05&clubId=18&search=尔如&start=0&limit=10",
+									"protocol": "http",
+									"host": [
+										"121",
+										"201",
+										"58",
+										"176"
+									],
+									"port": "8010",
+									"path": [
+										"mma",
+										"palyerSearch"
+									],
+									"query": [
+										{
+											"key": "countryId",
+											"value": "1%2C32",
+											"equals": true,
+											"description": "国籍id数组，多个id以,分割"
+										},
+										{
+											"key": "level",
+											"value": "04%2C05",
+											"equals": true,
+											"description": "选手级别id数组，多个id以,分割"
+										},
+										{
+											"key": "clubId",
+											"value": "18",
+											"equals": true,
+											"description": "俱乐部id"
+										},
+										{
+											"key": "search",
+											"value": "尔如",
+											"equals": true,
+											"description": "搜索框内容"
+										},
+										{
+											"key": "start",
+											"value": "0",
+											"equals": true,
+											"description": "第几页,从0开始"
+										},
+										{
+											"key": "limit",
+											"value": "10",
+											"equals": true,
+											"description": "每页的数量"
+										}
+									],
+									"variable": []
+								},
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"description": "http://dev.daxgame.com:8095/home/carouselFigure?page=1&pageSize=10"
+							},
+							"response": []
+						},
+						{
+							"name": "选手-根据ID获取选手详情",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"type": "text/javascript",
+										"exec": [
+											"tests[\"包含\"] = responseBody.has(\"波帕姆泰拳商丘会馆俱乐部\");"
+										]
+									}
+								}
+							],
+							"request": {
+								"url": {
+									"raw": "http://{{MMA_test}}/mma/playMessage?id=33",
+									"protocol": "http",
+									"host": [
+										"{{MMA_test}}"
+									],
+									"path": [
+										"mma",
+										"playMessage"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "33",
+											"equals": true,
+											"description": "选手id"
+										}
+									],
+									"variable": []
+								},
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"description": "http://dev.daxgame.com:8095/home/carouselFigure?page=1&pageSize=10"
+							},
+							"response": []
+						},
+						{
+							"name": "选手-热门参赛选手",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"type": "text/javascript",
+										"exec": [
+											"tests[\"包含\"] = responseBody.has(\"沙依兰\");"
+										]
+									}
+								}
+							],
+							"request": {
+								"url": "http://{{MMA_test}}/mma/playerHot",
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"description": "http://dev.daxgame.com:8095/home/carouselFigure?page=1&pageSize=10"
+							},
+							"response": []
+						},
+						{
+							"name": "选手-获取所有级别信息",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"type": "text/javascript",
+										"exec": [
+											"tests[\"包含\"] = responseBody.has(\"次中量级\");"
+										]
+									}
+								}
+							],
+							"request": {
+								"url": "http://{{MMA_test}}/mma/playerLevel      ",
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"description": "http://dev.daxgame.com:8095/home/carouselFigure?page=1&pageSize=10"
+							},
+							"response": []
+						},
+						{
+							"name": "选手-根据ID获取比赛记录",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"type": "text/javascript",
+										"exec": [
+											"tests[\"包含\"] = responseBody.has(\"高博\");"
+										]
+									}
+								}
+							],
+							"request": {
+								"url": {
+									"raw": "http://{{MMA_test}}/mma/playerMatch?id=26&start=0&limit=10",
+									"protocol": "http",
+									"host": [
+										"{{MMA_test}}"
+									],
+									"path": [
+										"mma",
+										"playerMatch"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "26",
+											"equals": true,
+											"description": "比赛选手id（目前只有这两个有比赛记录26,32）"
+										},
+										{
+											"key": "start",
+											"value": "0",
+											"equals": true,
+											"description": ""
+										},
+										{
+											"key": "limit",
+											"value": "10 ",
+											"equals": true,
+											"description": ""
+										}
+									],
+									"variable": []
+								},
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"description": "http://dev.daxgame.com:8095/home/carouselFigure?page=1&pageSize=10"
+							},
+							"response": []
+						},
+						{
+							"name": "选手-选手排名",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"type": "text/javascript",
+										"exec": [
+											"tests[\"包含\"] = responseBody.has(\"天山雄鹰\");"
+										]
+									}
+								}
+							],
+							"request": {
+								"url": {
+									"raw": "http://{{MMA_test}}/mma/playerRank?level=05&start=0&limit=10",
+									"protocol": "http",
+									"host": [
+										"{{MMA_test}}"
+									],
+									"path": [
+										"mma",
+										"playerRank"
+									],
+									"query": [
+										{
+											"key": "level",
+											"value": "05",
+											"equals": true,
+											"description": ""
+										},
+										{
+											"key": "start",
+											"value": "0",
+											"equals": true,
+											"description": ""
+										},
+										{
+											"key": "limit",
+											"value": "10",
+											"equals": true,
+											"description": ""
+										}
+									],
+									"variable": []
+								},
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"description": "http://dev.daxgame.com:8095/home/carouselFigure?page=1&pageSize=10"
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "大象运动 MMA竞猜",
+					"description": "",
+					"item": [
+						{
+							"name": "rank : 排行",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"type": "text/javascript",
+										"exec": [
+											"// tests[\"title\"] = responseBody.has(\"精武门对决-乌力吉布仁vs胡布兰\");",
+											"",
+											"var responseJson;  ",
+											"try{  ",
+											"    tests[\" body has Count\"] = responseBody.has(\"count\");  ",
+											"    tests[\" body has Docs\"] = responseBody.has(\"metadatas\");  ",
+											"    responseJson = JSON.parse(responseBody);  ",
+											"    tests[\" doc0 contains iiid\"] = \"iiid\" in  responseJson.Data.metadatas[0];  ",
+											"}  ",
+											"catch(e){  ",
+											"}  ",
+											"  ",
+											"tests[\"status code is 200\"]= responseCode.code===200;  ",
+											"  ",
+											"tests[\"Status code name has string\"] = responseCode.name.has(\"Created\");  ",
+											"  ",
+											"tests[\"Content-Type is present\"] = postman.getResponseHeader(\"Content-Type\");  ",
+											"  ",
+											"tests[\"Body matches string\"] = responseBody.has(\"string_you_want_to_search\");  "
+										]
+									}
+								}
+							],
+							"request": {
+								"url": {
+									"raw": "http://192.168.80.237:7788/lottery/rank?id=2&start=0&stop=10",
+									"protocol": "http",
+									"host": [
+										"192",
+										"168",
+										"80",
+										"237"
+									],
+									"port": "7788",
+									"path": [
+										"lottery",
+										"rank"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "2",
+											"equals": true,
+											"description": "赛事id"
+										},
+										{
+											"key": "start",
+											"value": "0",
+											"equals": true,
+											"description": "开始位置"
+										},
+										{
+											"key": "stop",
+											"value": "10",
+											"equals": true,
+											"description": "结束位置"
+										}
+									],
+									"variable": []
+								},
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"description": "http://dev.daxgame.com:8095/home/carouselFigure?page=1&pageSize=10"
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				}
+			]
+		}
+	]
+}

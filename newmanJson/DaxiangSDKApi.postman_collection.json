@@ -1,0 +1,1203 @@
+{
+	"info": {
+		"name": "DaxiangSDKApi",
+		"_postman_id": "6e13bf98-42f4-2097-3a95-666f01f87fa6",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"description": "Folder for auth",
+			"item": [
+				{
+					"name": "Login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"tests[\"expires_in pass\"] = responseBody.has(\"604799\");"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "sdkSession",
+								"value": "4028e4825ea304fb015ea314e0b30014",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"password\": \"7c4a8d09ca3762af61e59520943dc26494f8941b\",\r\n  \"rememberMe\": true,\r\n  \"username\": \"15113856116\"\r\n}"
+						},
+						"url": {
+							"raw": "http://dev.daxgame.com:8880/api/sdk/auth",
+							"protocol": "http",
+							"host": [
+								"dev",
+								"daxgame",
+								"com"
+							],
+							"port": "8880",
+							"path": [
+								"api",
+								"sdk",
+								"auth"
+							]
+						},
+						"description": "获取 api token"
+					},
+					"response": []
+				},
+				{
+					"name": "LoginAuto",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "sdkSession",
+								"value": "4028e4825ea304fb015ea314e0b30014"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MDk1MjkwNDgsInVzZXJfbmFtZSI6IjE1MTEzODU2MTE2IiwiYXV0aG9yaXRpZXMiOlsiVVNFUiJdLCJqdGkiOiI1ZjA1MDhkMy1iZjdkLTQzNTAtYWIyZC1kNzk3YTRlMTJjNzIiLCJjbGllbnRfaWQiOiJicm93c2VyIiwic2NvcGUiOlsidWkiXX0.ATbtSUzbTez83-7KncaWHY9L3vom2XN9PxfSLVd8eXQb4VRqTgtX84N4mJ9W9mkvs_UdrRcrm39JByVwSKUCdi0SafffO2KHTeg2S2piVIHVGwyPcVtJyF8CUddQpa1I2Tk8xOmH4PvdJRflYnWAGRLIOob7VDAP2H-jZVBHiYMqACxuFozPIsYGQDYSA3BJs9B5DwHvTzNDroVVEQEFi4ytQobzZXEq_ADSK_xdHG6-Qe_YykSqc-CWwr1Z1DGFX9uLWBidOHsHRNcd5XYCELjsr5ZOmwtptb1euYSKt3vH1uu281W4PDZIQE5OcJraRMEOWTPcsJHjdtF61OviGQ"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://121.201.58.252:8880/api/sdk/auth/auto",
+							"protocol": "http",
+							"host": [
+								"121",
+								"201",
+								"58",
+								"252"
+							],
+							"port": "8880",
+							"path": [
+								"api",
+								"sdk",
+								"auth",
+								"auto"
+							]
+						},
+						"description": "自动登录"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "data",
+			"description": "Folder for data",
+			"item": [
+				{
+					"name": "0:ROLE_CREATED",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "sdkSession",
+								"value": "4028e4825ea304fb015ea314e0b30014"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"cpPlayerId\": \"4028e4825ea304fb015ea314730d000d\",\r\n  \"cpRoleId\": \"116071491174744\",\r\n  \"cpServerId\": \"27025\",\r\n  \"cpServerName\": \"s25.春暖花开\",\r\n  \"gameId\": \"10006\",\r\n  \"level\": 10,\r\n  \"nickName\": \"乔飞昂\",\r\n  \"sdkEventType\": \"ROLE_CREATED\",\r\n  \"serverTime\": 1508212000,\r\n  \"sign\": \"666\",\r\n  \"spreadCode\": \"\"\r\n}"
+						},
+						"url": {
+							"raw": "http://121.201.58.252:8880/api/sdk/data",
+							"protocol": "http",
+							"host": [
+								"121",
+								"201",
+								"58",
+								"252"
+							],
+							"port": "8880",
+							"path": [
+								"api",
+								"sdk",
+								"data"
+							],
+							"query": [
+								{
+									"key": "gameId",
+									"value": "10006",
+									"equals": true,
+									"description": "cp_id：游戏id ",
+									"disabled": true
+								}
+							]
+						},
+						"description": "推送昵称 等级 进出区服信息"
+					},
+					"response": []
+				},
+				{
+					"name": "1:ROLE_NICKNAME_CHANGED",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "sdkSession",
+								"value": "4028e4825ea304fb015ea314e0b30014"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"cpPlayerId\": \"4028e4825ea304fb015ea314730d000d\",\r\n  \"cpRoleId\": \"116071491174744\",\r\n  \"cpServerId\": \"27025\",\r\n  \"cpServerName\": \"s25.春暖花开\",\r\n  \"gameId\": \"10006\",\r\n  \"level\": 10,\r\n  \"nickName\": \"乔飞昂1\",\r\n  \"sdkEventType\": \"ROLE_NICKNAME_CHANGED\",\r\n  \"serverTime\": 1508212000,\r\n  \"sign\": \"666\",\r\n  \"spreadCode\": \"\"\r\n}"
+						},
+						"url": {
+							"raw": "http://121.201.58.252:8880/api/sdk/data",
+							"protocol": "http",
+							"host": [
+								"121",
+								"201",
+								"58",
+								"252"
+							],
+							"port": "8880",
+							"path": [
+								"api",
+								"sdk",
+								"data"
+							]
+						},
+						"description": "推送昵称 等级 进出区服信息"
+					},
+					"response": []
+				},
+				{
+					"name": "2:ROLE_LEVEL_UP",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "sdkSession",
+								"value": "4028e4825ea304fb015ea314e0b30014"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"cpPlayerId\": \"4028e4825ea304fb015ea314730d000d\",\r\n  \"cpRoleId\": \"116071491174744\",\r\n  \"cpServerId\": \"27025\",\r\n  \"cpServerName\": \"s25.春暖花开\",\r\n  \"gameId\": \"10006\",\r\n  \"level\": 11,\r\n  \"nickName\": \"乔飞昂\",\r\n  \"sdkEventType\": \"ROLE_LEVEL_UP\",\r\n  \"serverTime\": 1508212000,\r\n  \"sign\": \"666\",\r\n  \"spreadCode\": \"\"\r\n}"
+						},
+						"url": {
+							"raw": "http://121.201.58.252:8880/api/sdk/data",
+							"protocol": "http",
+							"host": [
+								"121",
+								"201",
+								"58",
+								"252"
+							],
+							"port": "8880",
+							"path": [
+								"api",
+								"sdk",
+								"data"
+							],
+							"query": [
+								{
+									"key": "gameId",
+									"value": "10006",
+									"equals": true,
+									"description": "cp_id：游戏id ",
+									"disabled": true
+								}
+							]
+						},
+						"description": "推送昵称 等级 进出区服信息"
+					},
+					"response": []
+				},
+				{
+					"name": "3:ROLE_SERVER_LOGIN",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "sdkSession",
+								"value": "4028e4825ea304fb015ea314e0b30014"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"cpPlayerId\": \"4028e4825ea304fb015ea314730d000d\",\r\n  \"cpRoleId\": \"116071491174744\",\r\n  \"cpServerId\": \"27025\",\r\n  \"cpServerName\": \"s25.春暖花开\",\r\n  \"gameId\": \"10006\",\r\n  \"level\": 11,\r\n  \"nickName\": \"乔飞昂\",\r\n  \"sdkEventType\": \"ROLE_SERVER_LOGIN\",\r\n  \"serverTime\": 1508212000,\r\n  \"sign\": \"666\",\r\n  \"spreadCode\": \"\"\r\n}"
+						},
+						"url": {
+							"raw": "http://121.201.58.252:8880/api/sdk/data",
+							"protocol": "http",
+							"host": [
+								"121",
+								"201",
+								"58",
+								"252"
+							],
+							"port": "8880",
+							"path": [
+								"api",
+								"sdk",
+								"data"
+							],
+							"query": [
+								{
+									"key": "gameId",
+									"value": "10006",
+									"equals": true,
+									"description": "cp_id：游戏id ",
+									"disabled": true
+								}
+							]
+						},
+						"description": "推送昵称 等级 进出区服信息"
+					},
+					"response": []
+				},
+				{
+					"name": "4:ROLE_SERVER_LOGOUT",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "sdkSession",
+								"value": "4028e4825ea304fb015ea314e0b30014"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"cpPlayerId\": \"4028e4825ea304fb015ea314730d000d\",\r\n  \"cpRoleId\": \"116071491174744\",\r\n  \"cpServerId\": \"27025\",\r\n  \"cpServerName\": \"s25.春暖花开\",\r\n  \"gameId\": \"10006\",\r\n  \"level\": 11,\r\n  \"nickName\": \"乔飞昂\",\r\n  \"sdkEventType\": \"ROLE_SERVER_LOGOUT\",\r\n  \"serverTime\": 1508212000,\r\n  \"sign\": \"666\",\r\n  \"spreadCode\": \"\"\r\n}"
+						},
+						"url": {
+							"raw": "http://121.201.58.252:8880/api/sdk/data",
+							"protocol": "http",
+							"host": [
+								"121",
+								"201",
+								"58",
+								"252"
+							],
+							"port": "8880",
+							"path": [
+								"api",
+								"sdk",
+								"data"
+							],
+							"query": [
+								{
+									"key": "gameId",
+									"value": "10006",
+									"equals": true,
+									"description": "cp_id：游戏id ",
+									"disabled": true
+								}
+							]
+						},
+						"description": "推送昵称 等级 进出区服信息"
+					},
+					"response": []
+				},
+				{
+					"name": "5:SPREAD_CODE_USED",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "sdkSession",
+								"value": "4028e4825ea304fb015ea314e0b30014"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"cpPlayerId\": \"4028e4825ea304fb015ea314730d000d\",\r\n  \"cpRoleId\": \"116071491174744\",\r\n  \"cpServerId\": \"27025\",\r\n  \"cpServerName\": \"s25.春暖花开\",\r\n  \"gameId\": \"10006\",\r\n  \"level\": 11,\r\n  \"nickName\": \"乔飞昂\",\r\n  \"sdkEventType\": \"SPREAD_CODE_USED\",\r\n  \"serverTime\": 1508212000,\r\n  \"sign\": \"666\",\r\n  \"spreadCode\": \"6666666666\"\r\n}"
+						},
+						"url": {
+							"raw": "http://121.201.58.252:8880/api/sdk/data",
+							"protocol": "http",
+							"host": [
+								"121",
+								"201",
+								"58",
+								"252"
+							],
+							"port": "8880",
+							"path": [
+								"api",
+								"sdk",
+								"data"
+							],
+							"query": [
+								{
+									"key": "gameId",
+									"value": "10006",
+									"equals": true,
+									"description": "cp_id：游戏id ",
+									"disabled": true
+								}
+							]
+						},
+						"description": "推送昵称 等级 进出区服信息"
+					},
+					"response": []
+				},
+				{
+					"name": "8:USER_LOGIN",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "sdkSession",
+								"value": "4028e4825ea304fb015ea314e0b30014"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"cpPlayerId\": \"4028e4825ea304fb015ea314730d000d\",\r\n  \"cpRoleId\": \"116071491174744\",\r\n  \"cpServerId\": \"27025\",\r\n  \"cpServerName\": \"s25.春暖花开\",\r\n  \"gameId\": \"10006\",\r\n  \"level\": 11,\r\n  \"nickName\": \"乔飞昂\",\r\n  \"sdkEventType\": \"USER_LOGIN\",\r\n  \"serverTime\": 1508212000,\r\n  \"sign\": \"666\",\r\n  \"spreadCode\": \"\"\r\n}"
+						},
+						"url": {
+							"raw": "http://121.201.58.252:8880/api/sdk/data",
+							"protocol": "http",
+							"host": [
+								"121",
+								"201",
+								"58",
+								"252"
+							],
+							"port": "8880",
+							"path": [
+								"api",
+								"sdk",
+								"data"
+							],
+							"query": [
+								{
+									"key": "gameId",
+									"value": "10006",
+									"equals": true,
+									"description": "cp_id：游戏id ",
+									"disabled": true
+								}
+							]
+						},
+						"description": "推送昵称 等级 进出区服信息"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "init",
+			"description": "上送设备信息，版本信息，返回更新及控制信息",
+			"item": [
+				{
+					"name": "SdkInitVM",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"tests[\"jingwumen001\"] = responseBody.has(\"jingwumen001\");"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"app\": {\r\n    \"bundleDisplayName\": \"null\",\r\n    \"bundleIndentifler\": \"null\",\r\n    \"bundleName\": \"null\",\r\n    \"debugModel\": false,\r\n    \"landspaceGame\": false,\r\n    \"platform\": \"ANDROID\",\r\n    \"productPackageName\": \"com.daxgame.rycq02\",\r\n    \"versionCode\": \"22\",\r\n    \"versionName\": \"1.6.0\"\r\n  },\r\n  \"config\": {\r\n    \"channelId\": \"100006-bl03\",\r\n    \"channelName\": \"荣耀传奇\",\r\n    \"cpId\": \"100006\",\r\n    \"cpName\": \"拓动\",\r\n    \"gameId\": \"10006\",\r\n    \"sign\": \"3fb54767e9eaac0d05a204e2ffa7c270\"\r\n  },\r\n  \"device\": {\r\n    \"androidId\": \"6045cb8a42cd7426\",\r\n    \"cpuType\": \"ARMv7 Processor rev 0 (v7l)\",\r\n    \"currentLanguage\": \"zh\",\r\n    \"currentTime\": \"1508206084146\",\r\n    \"currentTimezone\": \"Asia/Shanghai\",\r\n    \"imei\": \"868131010604522\",\r\n    \"imsi\": \"460076045203138\",\r\n    \"macAddress\": \"60:45:CB:8A:42:CD\",\r\n    \"networkType\": \"WIFI\",\r\n    \"phoneIp\": \"172.17.100.15\",\r\n    \"phoneModel\": \"msm8974\",\r\n    \"phoneProductor\": \"vivo\",\r\n    \"rootAuth\": \"true\",\r\n    \"screenHeight\": 720,\r\n    \"screenWidth\": 1280,\r\n    \"simOperatorName\": \"CHINA MOBILE\",\r\n    \"simSerialNumber\": \"89860081016045203138\",\r\n    \"supportRoated\": true,\r\n    \"systemVersion\": \"19\",\r\n    \"uuid\": \"null\"\r\n  }\r\n}"
+						},
+						"url": {
+							"raw": "http://121.201.58.252:8880/api/sdk/init",
+							"protocol": "http",
+							"host": [
+								"121",
+								"201",
+								"58",
+								"252"
+							],
+							"port": "8880",
+							"path": [
+								"api",
+								"sdk",
+								"init"
+							]
+						},
+						"description": "上送设备信息，版本信息，返回更新及控制信息"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "pay",
+			"description": "Folder for pay",
+			"item": [
+				{
+					"name": "payApiList",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"tests[\"PAY_TEST\"] = responseBody.has(\"PAY_TEST\");"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MDk1MjkwNDgsInVzZXJfbmFtZSI6IjE1MTEzODU2MTE2IiwiYXV0aG9yaXRpZXMiOlsiVVNFUiJdLCJqdGkiOiI1ZjA1MDhkMy1iZjdkLTQzNTAtYWIyZC1kNzk3YTRlMTJjNzIiLCJjbGllbnRfaWQiOiJicm93c2VyIiwic2NvcGUiOlsidWkiXX0.ATbtSUzbTez83-7KncaWHY9L3vom2XN9PxfSLVd8eXQb4VRqTgtX84N4mJ9W9mkvs_UdrRcrm39JByVwSKUCdi0SafffO2KHTeg2S2piVIHVGwyPcVtJyF8CUddQpa1I2Tk8xOmH4PvdJRflYnWAGRLIOob7VDAP2H-jZVBHiYMqACxuFozPIsYGQDYSA3BJs9B5DwHvTzNDroVVEQEFi4ytQobzZXEq_ADSK_xdHG6-Qe_YykSqc-CWwr1Z1DGFX9uLWBidOHsHRNcd5XYCELjsr5ZOmwtptb1euYSKt3vH1uu281W4PDZIQE5OcJraRMEOWTPcsJHjdtF61OviGQ"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "user"
+						},
+						"url": {
+							"raw": "http://121.201.58.252:8880/api/sdk/pay/api",
+							"protocol": "http",
+							"host": [
+								"121",
+								"201",
+								"58",
+								"252"
+							],
+							"port": "8880",
+							"path": [
+								"api",
+								"sdk",
+								"pay",
+								"api"
+							]
+						},
+						"description": "返回支付的支付列表"
+					},
+					"response": []
+				},
+				{
+					"name": "PaymentCallback",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"result\":\"1\",\"agent_id\":\"2107603\",\"pay_amt\":\"25.00\",\"pay_message\":\"\",\"agent_bill_id\":\"4028e5825efaa414015f3a34416209d8\",\"sign\":\"f03509cf177ce13cfa042230745aa2d1\",\"pay_type\":\"30\",\"remark\":\"DAXG20170527\",\"jnet_bill_no\":\"H1710203154199AJ\"}"
+						},
+						"url": {
+							"raw": "http://121.201.58.252:8880/api/sdk/pay/heeynotify?result=1&agent_id=2107603&pay_amt=25.00&pay_message&agent_bill_id=4028e4825ea24d11015ea25b76e2000c&sign=1d2004aa126303237ad60d7e0ef9a323&pay_type=30&remark=DAXG20170527&jnet_bill_no=H1710203154199AJ",
+							"protocol": "http",
+							"host": [
+								"121",
+								"201",
+								"58",
+								"252"
+							],
+							"port": "8880",
+							"path": [
+								"api",
+								"sdk",
+								"pay",
+								"heeynotify"
+							],
+							"query": [
+								{
+									"key": "result",
+									"value": "1",
+									"equals": true
+								},
+								{
+									"key": "agent_id",
+									"value": "2107603",
+									"equals": true
+								},
+								{
+									"key": "pay_amt",
+									"value": "25.00",
+									"equals": true
+								},
+								{
+									"key": "pay_message",
+									"value": "",
+									"equals": false
+								},
+								{
+									"key": "agent_bill_id",
+									"value": "4028e4825ea24d11015ea25b76e2000c",
+									"equals": true
+								},
+								{
+									"key": "sign",
+									"value": "1d2004aa126303237ad60d7e0ef9a323",
+									"equals": true
+								},
+								{
+									"key": "pay_type",
+									"value": "30",
+									"equals": true
+								},
+								{
+									"key": "remark",
+									"value": "DAXG20170527",
+									"equals": true
+								},
+								{
+									"key": "jnet_bill_no",
+									"value": "H1710203154199AJ",
+									"equals": true
+								}
+							]
+						},
+						"description": "骏卡支付回调"
+					},
+					"response": []
+				},
+				{
+					"name": "PaymentCallback",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"result\":\"1\",\"agent_id\":\"2107603\",\"pay_amt\":\"25.00\",\"pay_message\":\"\",\"agent_bill_id\":\"4028e5825efaa414015f3a34416209d8\",\"sign\":\"f03509cf177ce13cfa042230745aa2d1\",\"pay_type\":\"30\",\"remark\":\"DAXG20170527\",\"jnet_bill_no\":\"H1710203154199AJ\"}"
+						},
+						"url": {
+							"raw": "http://121.201.58.252:8880/api/sdk/pay/heeynotify?result=1&agent_id=2107603&pay_amt=25.00&pay_message&agent_bill_id=4028e4825ea24d11015ea25b76e2000c&sign=1d2004aa126303237ad60d7e0ef9a323&pay_type=30&remark=DAXG20170527&jnet_bill_no=H1710203154199AJ",
+							"protocol": "http",
+							"host": [
+								"121",
+								"201",
+								"58",
+								"252"
+							],
+							"port": "8880",
+							"path": [
+								"api",
+								"sdk",
+								"pay",
+								"heeynotify"
+							],
+							"query": [
+								{
+									"key": "result",
+									"value": "1",
+									"equals": true
+								},
+								{
+									"key": "agent_id",
+									"value": "2107603",
+									"equals": true
+								},
+								{
+									"key": "pay_amt",
+									"value": "25.00",
+									"equals": true
+								},
+								{
+									"key": "pay_message",
+									"value": "",
+									"equals": false
+								},
+								{
+									"key": "agent_bill_id",
+									"value": "4028e4825ea24d11015ea25b76e2000c",
+									"equals": true
+								},
+								{
+									"key": "sign",
+									"value": "1d2004aa126303237ad60d7e0ef9a323",
+									"equals": true
+								},
+								{
+									"key": "pay_type",
+									"value": "30",
+									"equals": true
+								},
+								{
+									"key": "remark",
+									"value": "DAXG20170527",
+									"equals": true
+								},
+								{
+									"key": "jnet_bill_no",
+									"value": "H1710203154199AJ",
+									"equals": true
+								}
+							]
+						},
+						"description": "骏卡支付回调"
+					},
+					"response": []
+				},
+				{
+					"name": "PaySubmit",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"",
+									"pm.test(\"Your test code\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.code).to.eql(0);",
+									"});",
+									"",
+									"pm.test(\"Your test success\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.success).to.eql(true);",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "sdkSession",
+								"value": "4028e4825ea304fb015ea314e0b30014"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"amount\": 600,\r\n  \"apiData\": {},\r\n  \"cpOrderId\": \"DAXGAME13092079964577027325\",\r\n  \"cpRoleId\": \"\",\r\n  \"cpServerId\": \"105\",\r\n  \"extraData\": \"\",\r\n  \"gameId\": \"10006\",\r\n  \"notifyUrl\": \"\",\r\n  \"payApiType\": \"PAY_TEST\",\r\n  \"sign\": \"666\",\r\n  \"title\": \"60元宝\"\r\n}"
+						},
+						"url": {
+							"raw": "http://121.201.58.252:8880/api/sdk/pay/submit",
+							"protocol": "http",
+							"host": [
+								"121",
+								"201",
+								"58",
+								"252"
+							],
+							"port": "8880",
+							"path": [
+								"api",
+								"sdk",
+								"pay",
+								"submit"
+							]
+						},
+						"description": "返回支付接口所需信息"
+					},
+					"response": []
+				},
+				{
+					"name": "PaySuccess",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Body matches string\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"0\");",
+									"});",
+									"",
+									"// \"sign\":\"3f6728f63564d9bf9d4a02b4ee85dae8\"     5c9df86d59fdb110aa004f668a564b96",
+									"// {\"amount\":\"600\",\"cpGameId\":\"10005\",\"cpOrderId\":\"DAXGAME13091479830451869773\",\"cpServerId\":\"105\",\"extraData\":\"\",\"orderId\":\"498733895a2643b084c464aa2839278f\",\"sign\":\"5c9df86d59fdb110aa004f668a564b96\",\"title\":\"60元宝\",\"tradeTime\":1505379837,\"tradeType\":\"PAY_TEST\"}",
+									"",
+									"// 充值返回结果为JSON对象",
+									"// 成功:{\"status\":0}",
+									"// 失败:{\"status\":-1}",
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"amount\":\"600\",\"cpGameId\":\"10005\",\"cpOrderId\":\"DAXGAME13092079964577027325\",\"cpServerId\":\"105\",\"extraData\":\"\",\"orderId\":\"1f4342f00381447e9b2ddfcd21d6546b\",\"sign\":\"86a376f51bd2075fe791632756e9c726\",\"title\":\"60元宝\",\"tradeTime\":\"1505879974\",\"tradeType\":\"PAY_TEST\"}"
+						},
+						"url": {
+							"raw": "https://gamepay.appgame.com/api/providerPay/daxgameCallback",
+							"protocol": "https",
+							"host": [
+								"gamepay",
+								"appgame",
+								"com"
+							],
+							"path": [
+								"api",
+								"providerPay",
+								"daxgameCallback"
+							],
+							"query": [
+								{
+									"key": "amount",
+									"value": "600",
+									"equals": true,
+									"disabled": true
+								},
+								{
+									"key": "cpGameId",
+									"value": "10005",
+									"equals": true,
+									"disabled": true
+								},
+								{
+									"key": "cpOrderId",
+									"value": "DAXGAME13091479830451869773",
+									"equals": true,
+									"disabled": true
+								},
+								{
+									"key": "cpServerId",
+									"value": "105",
+									"equals": true,
+									"disabled": true
+								},
+								{
+									"key": "extraData",
+									"value": "",
+									"equals": false,
+									"disabled": true
+								},
+								{
+									"key": "orderId",
+									"value": "498733895a2643b084c464aa2839278f",
+									"equals": true,
+									"disabled": true
+								},
+								{
+									"key": "sign",
+									"value": "3f6728f63564d9bf9d4a02b4ee85dae",
+									"equals": true,
+									"disabled": true
+								},
+								{
+									"key": "title",
+									"value": "60元宝",
+									"equals": true,
+									"disabled": true
+								},
+								{
+									"key": "tradeTime",
+									"value": "1505379837",
+									"equals": true,
+									"disabled": true
+								},
+								{
+									"key": "tradeType",
+									"value": "PAY_TEST",
+									"equals": true,
+									"disabled": true
+								}
+							]
+						},
+						"description": "http://dev.daxgame.com:8095/home/carouselFigure?page=1&pageSize=10"
+					},
+					"response": []
+				},
+				{
+					"name": "paySignErrorTest",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Body matches string\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"-1\");",
+									"});",
+									"",
+									"// \"sign\":\"d4fdf4a5a238145b59b565c9179cd541\"",
+									"// {\"amount\":\"600\",\"cpGameId\":\"10007\",\"cpOrderId\":\"58520170921162335568404813\",\"cpServerId\":\"1\",\"extraData\":\"58520170921162335568404813\",\"orderId\":\"cedd3326bec24ba78edeefddc4268db4\",\"sign\":\"e25b2e4a7ca6a71b49e84ec95924f291\",\"title\":\"600元宝\",\"tradeTime\":\"1505982218\",\"tradeType\":\"PAY_TEST\"}",
+									"",
+									"// {\"amount\":\"600\",\"cpGameId\":\"10007\",\"cpOrderId\":\"58520170929170651034802813\",\"extraData\":\"58520170929170651034802813\",\"orderId\":\"f9499c8d5ec64a0a015ecce393ac38a2\",\"sign\":\"5745f61d9efdf11ccc57fd5cad85c251\",\"title\":\"600元宝\",\"tradeTime\":\"1506676020146\",\"tradeType\":\"PAY_TEST\"}"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"amount\":\"600\",\"cpGameId\":\"10006\",\"cpOrderId\":\"50a1f273e25e4f469d61072b896dfb3c1\",\"cpPlayRoleId\":\"116071491174744\",\"cpServerId\":\"27025\",\"extraData\":\"60元宝\",\"orderId\":\"8abc12ed5f27fdff015f281e27ff000e\",\"sign\":\"10c4094e283dfc492dc446d1f40abe7a\",\"title\":\"60元宝(test)\",\"tradeTime\":\"1508206585902\",\"tradeType\":\"PAY_TEST\"}"
+						},
+						"url": {
+							"raw": "http://sync.1sdk.cn/cb/daxiangyouxi/0BF6350D5CE0A4B1/sync.html",
+							"protocol": "http",
+							"host": [
+								"sync",
+								"1sdk",
+								"cn"
+							],
+							"path": [
+								"cb",
+								"daxiangyouxi",
+								"0BF6350D5CE0A4B1",
+								"sync.html"
+							]
+						},
+						"description": "http://dev.daxgame.com:8095/home/carouselFigure?page=1&pageSize=10"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "quit",
+			"description": "Folder for quit",
+			"item": [
+				{
+					"name": "SDKQuit",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "sdkSession",
+								"value": "4028e4825ea304fb015ea314e0b30014",
+								"description": "登录用账号session"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "sdkSession"
+						},
+						"url": {
+							"raw": "http://121.201.58.252:8880/api/sdk/quit/:sdkSession",
+							"protocol": "http",
+							"host": [
+								"121",
+								"201",
+								"58",
+								"252"
+							],
+							"port": "8880",
+							"path": [
+								"api",
+								"sdk",
+								"quit",
+								":sdkSession"
+							],
+							"variable": [
+								{
+									"description": "回话id",
+									"key": "sdkSession",
+									"value": "8abc12ed5f27fdff015f28216cca0019"
+								}
+							]
+						},
+						"description": "退出游戏时调用"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

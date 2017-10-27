@@ -1,0 +1,1082 @@
+{
+	"id": "72518a40-5494-4354-ba7c-9f97cb25501f",
+	"name": "Daxiang Game SDK Server Api",
+	"allTests": [],
+	"timestamp": "2017-10-24T08:25:07.384Z",
+	"collection_id": "6e13bf98-42f4-2097-3a95-666f01f87fa6",
+	"folder_id": 0,
+	"target_type": "collection",
+	"environment_id": "no-environment",
+	"data": [],
+	"delay": 0,
+	"count": 1,
+	"collection": {
+		"id": "6e13bf98-42f4-2097-3a95-666f01f87fa6",
+		"name": "Daxiang Game SDK Server Api",
+		"description": "",
+		"order": [],
+		"folders": [
+			{
+				"collection": "6e13bf98-42f4-2097-3a95-666f01f87fa6",
+				"collectionId": "6e13bf98-42f4-2097-3a95-666f01f87fa6",
+				"collection_id": "6e13bf98-42f4-2097-3a95-666f01f87fa6",
+				"collection_name": "Daxiang Game SDK Server Api",
+				"description": "Folder for auth",
+				"folders_order": [],
+				"id": "86ef390c-a1c7-3607-b38a-86a270ed93de",
+				"name": "auth",
+				"order": [
+					"00241a44-4607-f68e-491e-067dd9b00a55",
+					"7cda8e19-bcbe-633b-cee9-f3e1dea451cd"
+				],
+				"owner": "2572232"
+			},
+			{
+				"collection": "6e13bf98-42f4-2097-3a95-666f01f87fa6",
+				"collectionId": "6e13bf98-42f4-2097-3a95-666f01f87fa6",
+				"collection_id": "6e13bf98-42f4-2097-3a95-666f01f87fa6",
+				"collection_name": "Daxiang Game SDK Server Api",
+				"description": "Folder for data",
+				"folders_order": [],
+				"id": "8723335e-ebe3-47b1-1c4b-fb00254ce1bf",
+				"name": "data",
+				"order": [
+					"d57a62df-94d8-5f77-bb6c-4b7b7496a6e6",
+					"223a2c79-cdbf-c75a-fdab-317873b24996",
+					"a4ae9925-c66e-c482-c2c2-3b702d5bc2b2",
+					"4fc9428a-b2e9-69bf-c61d-7ca70c5c8f8e",
+					"d39b809c-0eb1-847e-76a9-b7e063b14ee7",
+					"7566a8da-1b5b-56a2-9653-86953a61c098",
+					"df452bc1-eb63-23b0-aa38-cc7ff6b16085"
+				],
+				"owner": "2572232"
+			},
+			{
+				"collection": "6e13bf98-42f4-2097-3a95-666f01f87fa6",
+				"collectionId": "6e13bf98-42f4-2097-3a95-666f01f87fa6",
+				"collection_id": "6e13bf98-42f4-2097-3a95-666f01f87fa6",
+				"collection_name": "Daxiang Game SDK Server Api",
+				"description": "上送设备信息，版本信息，返回更新及控制信息",
+				"folders_order": [],
+				"id": "06638ecd-e346-7577-5134-6128866a4aa8",
+				"name": "init",
+				"order": [
+					"65bdf9db-508c-4b1e-8747-fa8687f0395b"
+				],
+				"owner": "2572232"
+			},
+			{
+				"collection": "6e13bf98-42f4-2097-3a95-666f01f87fa6",
+				"collectionId": "6e13bf98-42f4-2097-3a95-666f01f87fa6",
+				"collection_id": "6e13bf98-42f4-2097-3a95-666f01f87fa6",
+				"collection_name": "Daxiang Game SDK Server Api",
+				"description": "Folder for pay",
+				"folders_order": [],
+				"id": "1c8e1cca-d1c5-2e94-fa28-10f868dfaa2f",
+				"name": "pay",
+				"order": [
+					"94456b46-fb38-9edc-7302-971a68ec91d9",
+					"54d417f9-9206-5afd-f893-20ac4a57ef89",
+					"4f0614b8-5f4c-0d4b-3ca2-4dffe6eeee5d",
+					"358ec83d-0c44-4819-a19f-ea2d6984b831",
+					"2a0dbdbe-d3de-2bf9-bf0a-655a08e8670c",
+					"c5d70ff0-95a7-a819-37d5-2c70fcb6a21f"
+				],
+				"owner": "2572232"
+			},
+			{
+				"collection": "6e13bf98-42f4-2097-3a95-666f01f87fa6",
+				"collectionId": "6e13bf98-42f4-2097-3a95-666f01f87fa6",
+				"collection_id": "6e13bf98-42f4-2097-3a95-666f01f87fa6",
+				"collection_name": "Daxiang Game SDK Server Api",
+				"description": "Folder for quit",
+				"folders_order": [],
+				"id": "ad5371fa-6b4c-39a3-c41e-b96dbf1d3af9",
+				"name": "quit",
+				"order": [
+					"6213ee55-66a7-d4ba-0f15-345ba75a2a91"
+				],
+				"owner": "2572232"
+			}
+		],
+		"folders_order": [
+			"86ef390c-a1c7-3607-b38a-86a270ed93de",
+			"8723335e-ebe3-47b1-1c4b-fb00254ce1bf",
+			"06638ecd-e346-7577-5134-6128866a4aa8",
+			"1c8e1cca-d1c5-2e94-fa28-10f868dfaa2f",
+			"ad5371fa-6b4c-39a3-c41e-b96dbf1d3af9"
+		],
+		"timestamp": 1413302258635,
+		"synced": true,
+		"remote_id": 0,
+		"owner": "2572232",
+		"sharedWithTeam": false,
+		"subscribed": false,
+		"remoteLink": "",
+		"remoteLinkUpdatedAt": null,
+		"public": false,
+		"createdAt": 1507542037165,
+		"updatedAt": 1508833214227,
+		"write": true,
+		"published": false,
+		"favorite": true,
+		"permissions": {},
+		"syncedPermissions": {}
+	},
+	"folder": null,
+	"environment": null,
+	"globals": [],
+	"results": [
+		{
+			"name": "Login",
+			"id": "00241a44-4607-f68e-491e-067dd9b00a55",
+			"url": "http://121.201.58.252:8880/api/sdk/auth",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"access_token pass": true,
+				"expires_in pass": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"access_token pass": {
+					"pass": 1,
+					"fail": 0
+				},
+				"expires_in pass": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"118"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"access_token pass": true,
+					"expires_in pass": true
+				}
+			],
+			"time": "118",
+			"totalRequestTime": "118",
+			"iterationResults": {}
+		},
+		{
+			"name": "LoginAuto",
+			"id": "7cda8e19-bcbe-633b-cee9-f3e1dea451cd",
+			"url": "http://121.201.58.252:8880/api/sdk/auth/auto",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"61"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "61",
+			"totalRequestTime": "61",
+			"iterationResults": {}
+		},
+		{
+			"name": "0:ROLE_CREATED",
+			"id": "d57a62df-94d8-5f77-bb6c-4b7b7496a6e6",
+			"url": "http://121.201.58.252:8880/api/sdk/data?gameId=10006",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"45"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "45",
+			"totalRequestTime": "45",
+			"iterationResults": {}
+		},
+		{
+			"name": "1:ROLE_NICKNAME_CHANGED",
+			"id": "223a2c79-cdbf-c75a-fdab-317873b24996",
+			"url": "http://121.201.58.252:8880/api/sdk/data",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"49"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "49",
+			"totalRequestTime": "49",
+			"iterationResults": {}
+		},
+		{
+			"name": "2:ROLE_LEVEL_UP",
+			"id": "a4ae9925-c66e-c482-c2c2-3b702d5bc2b2",
+			"url": "http://121.201.58.252:8880/api/sdk/data?gameId=10006",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"47"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "47",
+			"totalRequestTime": "47",
+			"iterationResults": {}
+		},
+		{
+			"name": "3:ROLE_SERVER_LOGIN",
+			"id": "4fc9428a-b2e9-69bf-c61d-7ca70c5c8f8e",
+			"url": "http://121.201.58.252:8880/api/sdk/data?gameId=10006",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"44"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "44",
+			"totalRequestTime": "44",
+			"iterationResults": {}
+		},
+		{
+			"name": "4:ROLE_SERVER_LOGOUT",
+			"id": "d39b809c-0eb1-847e-76a9-b7e063b14ee7",
+			"url": "http://121.201.58.252:8880/api/sdk/data?gameId=10006",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"45"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "45",
+			"totalRequestTime": "45",
+			"iterationResults": {}
+		},
+		{
+			"name": "5:SPREAD_CODE_USED",
+			"id": "7566a8da-1b5b-56a2-9653-86953a61c098",
+			"url": "http://121.201.58.252:8880/api/sdk/data?gameId=10006",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"76"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "76",
+			"totalRequestTime": "76",
+			"iterationResults": {}
+		},
+		{
+			"name": "8:USER_LOGIN",
+			"id": "df452bc1-eb63-23b0-aa38-cc7ff6b16085",
+			"url": "http://121.201.58.252:8880/api/sdk/data?gameId=10006",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"49"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "49",
+			"totalRequestTime": "49",
+			"iterationResults": {}
+		},
+		{
+			"name": "SdkInitVM",
+			"id": "65bdf9db-508c-4b1e-8747-fa8687f0395b",
+			"url": "http://121.201.58.252:8880/api/sdk/init",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"jingwumen001": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"jingwumen001": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"53"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"jingwumen001": true
+				}
+			],
+			"time": "53",
+			"totalRequestTime": "53",
+			"iterationResults": {}
+		},
+		{
+			"name": "payApiList",
+			"id": "94456b46-fb38-9edc-7302-971a68ec91d9",
+			"url": "http://121.201.58.252:8880/api/sdk/pay/api",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"PAY_TEST": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PAY_TEST": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"18"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"PAY_TEST": true
+				}
+			],
+			"time": "18",
+			"totalRequestTime": "18",
+			"iterationResults": {}
+		},
+		{
+			"name": "PaymentCallback",
+			"id": "54d417f9-9206-5afd-f893-20ac4a57ef89",
+			"url": "http://121.201.58.252:8880/api/sdk/pay/heeynotify?result=1&agent_id=2107603&pay_amt=25.00&pay_message=&agent_bill_id=4028e4825ea24d11015ea25b76e2000c&sign=1d2004aa126303237ad60d7e0ef9a323&pay_type=30&remark=DAXG20170527&jnet_bill_no=H1710203154199AJ",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"107"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "107",
+			"totalRequestTime": "107",
+			"iterationResults": {}
+		},
+		{
+			"name": "PaymentCallback",
+			"id": "4f0614b8-5f4c-0d4b-3ca2-4dffe6eeee5d",
+			"url": "http://121.201.58.252:8880/api/sdk/pay/heeynotify?result=1&agent_id=2107603&pay_amt=25.00&pay_message=&agent_bill_id=4028e4825ea24d11015ea25b76e2000c&sign=1d2004aa126303237ad60d7e0ef9a323&pay_type=30&remark=DAXG20170527&jnet_bill_no=H1710203154199AJ",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"84"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "84",
+			"totalRequestTime": "84",
+			"iterationResults": {}
+		},
+		{
+			"name": "PaySubmit",
+			"id": "358ec83d-0c44-4819-a19f-ea2d6984b831",
+			"url": "http://121.201.58.252:8880/api/sdk/pay/submit",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error",
+				"detail": {
+					"name": "Internal Server Error",
+					"detail": "A generic error message, given when no more specific message is suitable."
+				}
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				"50"
+			],
+			"allTests": [
+				{}
+			],
+			"time": "50",
+			"totalRequestTime": "50",
+			"iterationResults": {}
+		},
+		{
+			"name": "PaySuccess",
+			"id": "2a0dbdbe-d3de-2bf9-bf0a-655a08e8670c",
+			"url": "https://gamepay.appgame.com/api/providerPay/daxgameCallback?amount=600&cpGameId=10005&cpOrderId=DAXGAME13091479830451869773&cpServerId=105&extraData=&orderId=498733895a2643b084c464aa2839278f&sign=3f6728f63564d9bf9d4a02b4ee85dae&title=60元宝&tradeTime=1505379837&tradeType=PAY_TEST",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"143"
+			],
+			"allTests": [
+				{
+					"Body matches string": true
+				}
+			],
+			"time": "143",
+			"totalRequestTime": "143",
+			"iterationResults": {}
+		},
+		{
+			"name": "paySignErrorTest",
+			"id": "c5d70ff0-95a7-a819-37d5-2c70fcb6a21f",
+			"url": "http://sync.1sdk.cn/cb/daxiangyouxi/0BF6350D5CE0A4B1/sync.html",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"58"
+			],
+			"allTests": [
+				{
+					"Body matches string": true
+				}
+			],
+			"time": "58",
+			"totalRequestTime": "58",
+			"iterationResults": {}
+		},
+		{
+			"name": "SDKQuit",
+			"id": "6213ee55-66a7-d4ba-0f15-345ba75a2a91",
+			"url": "http://121.201.58.252:8880/api/sdk/quit/8abc12ed5f27fdff015f28216cca0019",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				"42"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			],
+			"time": "42",
+			"totalRequestTime": "42",
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 20,
+	"totalFail": 0,
+	"totalTime": 1089,
+	"lifecycle": "done",
+	"requests": [
+		{
+			"name": "Login",
+			"id": "00241a44-4607-f68e-491e-067dd9b00a55",
+			"url": "http://121.201.58.252:8880/api/sdk/auth",
+			"time": "2017-10-24T08:25:07.384Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"access_token pass": {
+					"pass": 1,
+					"fail": 0
+				},
+				"expires_in pass": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "LoginAuto",
+			"id": "7cda8e19-bcbe-633b-cee9-f3e1dea451cd",
+			"url": "http://121.201.58.252:8880/api/sdk/auth/auto",
+			"time": "2017-10-24T08:25:07.384Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "0:ROLE_CREATED",
+			"id": "d57a62df-94d8-5f77-bb6c-4b7b7496a6e6",
+			"url": "http://121.201.58.252:8880/api/sdk/data?gameId=10006",
+			"time": "2017-10-24T08:25:07.384Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "1:ROLE_NICKNAME_CHANGED",
+			"id": "223a2c79-cdbf-c75a-fdab-317873b24996",
+			"url": "http://121.201.58.252:8880/api/sdk/data",
+			"time": "2017-10-24T08:25:07.384Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "2:ROLE_LEVEL_UP",
+			"id": "a4ae9925-c66e-c482-c2c2-3b702d5bc2b2",
+			"url": "http://121.201.58.252:8880/api/sdk/data?gameId=10006",
+			"time": "2017-10-24T08:25:07.384Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "3:ROLE_SERVER_LOGIN",
+			"id": "4fc9428a-b2e9-69bf-c61d-7ca70c5c8f8e",
+			"url": "http://121.201.58.252:8880/api/sdk/data?gameId=10006",
+			"time": "2017-10-24T08:25:07.384Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "4:ROLE_SERVER_LOGOUT",
+			"id": "d39b809c-0eb1-847e-76a9-b7e063b14ee7",
+			"url": "http://121.201.58.252:8880/api/sdk/data?gameId=10006",
+			"time": "2017-10-24T08:25:07.384Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "5:SPREAD_CODE_USED",
+			"id": "7566a8da-1b5b-56a2-9653-86953a61c098",
+			"url": "http://121.201.58.252:8880/api/sdk/data?gameId=10006",
+			"time": "2017-10-24T08:25:07.384Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "8:USER_LOGIN",
+			"id": "df452bc1-eb63-23b0-aa38-cc7ff6b16085",
+			"url": "http://121.201.58.252:8880/api/sdk/data?gameId=10006",
+			"time": "2017-10-24T08:25:07.384Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "SdkInitVM",
+			"id": "65bdf9db-508c-4b1e-8747-fa8687f0395b",
+			"url": "http://121.201.58.252:8880/api/sdk/init",
+			"time": "2017-10-24T08:25:07.384Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"jingwumen001": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "payApiList",
+			"id": "94456b46-fb38-9edc-7302-971a68ec91d9",
+			"url": "http://121.201.58.252:8880/api/sdk/pay/api",
+			"time": "2017-10-24T08:25:07.384Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PAY_TEST": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "PaymentCallback",
+			"id": "54d417f9-9206-5afd-f893-20ac4a57ef89",
+			"url": "http://121.201.58.252:8880/api/sdk/pay/heeynotify?result=1&agent_id=2107603&pay_amt=25.00&pay_message=&agent_bill_id=4028e4825ea24d11015ea25b76e2000c&sign=1d2004aa126303237ad60d7e0ef9a323&pay_type=30&remark=DAXG20170527&jnet_bill_no=H1710203154199AJ",
+			"time": "2017-10-24T08:25:07.384Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "PaymentCallback",
+			"id": "4f0614b8-5f4c-0d4b-3ca2-4dffe6eeee5d",
+			"url": "http://121.201.58.252:8880/api/sdk/pay/heeynotify?result=1&agent_id=2107603&pay_amt=25.00&pay_message=&agent_bill_id=4028e4825ea24d11015ea25b76e2000c&sign=1d2004aa126303237ad60d7e0ef9a323&pay_type=30&remark=DAXG20170527&jnet_bill_no=H1710203154199AJ",
+			"time": "2017-10-24T08:25:07.384Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "PaySubmit",
+			"id": "358ec83d-0c44-4819-a19f-ea2d6984b831",
+			"url": "http://121.201.58.252:8880/api/sdk/pay/submit",
+			"time": "2017-10-24T08:25:07.384Z",
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error",
+				"detail": {
+					"name": "Internal Server Error",
+					"detail": "A generic error message, given when no more specific message is suitable."
+				}
+			},
+			"testPassFailCounts": {}
+		},
+		{
+			"name": "PaySuccess",
+			"id": "2a0dbdbe-d3de-2bf9-bf0a-655a08e8670c",
+			"url": "https://gamepay.appgame.com/api/providerPay/daxgameCallback?amount=600&cpGameId=10005&cpOrderId=DAXGAME13091479830451869773&cpServerId=105&extraData=&orderId=498733895a2643b084c464aa2839278f&sign=3f6728f63564d9bf9d4a02b4ee85dae&title=60元宝&tradeTime=1505379837&tradeType=PAY_TEST",
+			"time": "2017-10-24T08:25:07.384Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "paySignErrorTest",
+			"id": "c5d70ff0-95a7-a819-37d5-2c70fcb6a21f",
+			"url": "http://sync.1sdk.cn/cb/daxiangyouxi/0BF6350D5CE0A4B1/sync.html",
+			"time": "2017-10-24T08:25:07.384Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		},
+		{
+			"name": "SDKQuit",
+			"id": "6213ee55-66a7-d4ba-0f15-345ba75a2a91",
+			"url": "http://121.201.58.252:8880/api/sdk/quit/8abc12ed5f27fdff015f28216cca0019",
+			"time": "2017-10-24T08:25:07.384Z",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			}
+		}
+	],
+	"synced": false
+}
